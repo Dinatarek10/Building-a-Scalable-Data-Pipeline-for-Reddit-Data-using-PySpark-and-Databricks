@@ -1,0 +1,8 @@
+Column Name,Data Type,Null Count,Null %,Distinct Values,Most Frequent Value
+id,object,0,0.0,2357,All unique
+author,object,6,0.25,1852,Acrobatic_Feeling16
+body,object,0,0.0,2350,[deleted]
+score,int64,0,0.0,223,2
+created_utc,float64,0,0.0,2269,1754942668.0
+parent_id,object,0,0.0,820,t3_1mnghv6
+link_id,object,0,0.0,10,"t3_1mn95cp, t3_1mniom8"

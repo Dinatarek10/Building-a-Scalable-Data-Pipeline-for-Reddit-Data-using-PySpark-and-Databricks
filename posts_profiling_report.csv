@@ -1,0 +1,9 @@
+Column Name,Data Type,Null Count,Null %,Distinct Values,Most Frequent Value
+id,object,0,0.0,10,All unique
+title,object,0,0.0,10,All unique
+author,object,0,0.0,9,DonkeyFuel
+score,int64,0,0.0,10,All unique
+num_comments,int64,0,0.0,10,All unique
+created_utc,float64,0,0.0,10,All unique
+selftext,float64,10,100.0,0,All unique
+subreddit,object,0,0.0,1,technology
