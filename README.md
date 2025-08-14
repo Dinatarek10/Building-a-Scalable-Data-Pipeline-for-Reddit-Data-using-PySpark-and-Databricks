@@ -1,7 +1,7 @@
 # Building a Scalable Data Pipeline for Reddit Data using PySpark and Databricks
 
-This project demonstrates how to build a scalable data pipeline for Reddit data using PySpark and Databricks.  
-It covers data extraction from Reddit's API, transformation and cleaning, and loading the processed data into Databricks for analysis.
+This project builds a scalable data pipeline using PySpark and Databricks to collect, process, and analyze Reddit data.  
+It extracts posts and their comments from technology subreddit via the Reddit API, cleans and transforms the data, and loads it into Databricks for further analysis.
 
 ## Features
 - Extract Reddit posts and comments using the Reddit API
@@ -14,5 +14,5 @@ It covers data extraction from Reddit's API, transformation and cleaning, and lo
 - Python
 - PySpark
 - Databricks
-- Reddit API (PRAW or Pushshift)
+- Reddit API (PRAW)
 - Git
