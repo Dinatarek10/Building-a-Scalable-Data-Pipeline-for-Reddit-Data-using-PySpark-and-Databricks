@@ -72,24 +72,23 @@ It extracts posts and their comments from technology subreddit via the Reddit AP
         - Removal of null values
         - Formatting of text fields
           
-**4- Databricks Pipeline**
-    The pipeline follows a Bronze–Silver–Gold architecture:
-    
-      - Bronze Layer (Bronze.ipynb):
-         Reads the cleaned CSV files (cleaned_posts.csv and cleaned_comments.csv) into Databricks as raw tables.
-         
-      - Silver Layer (Silver.ipynb):
-         Converts created_utc field from UNIX timestamp to human-readable datetime format.
-
-      - Gold Layer (Gold.ipynb):
+**4- Databricks pipeline**
+   The pipeline follows a Bronze–Silver–Gold architecture:
+   - Bronze Layer (Bronze.ipynb):
+      - Reads the cleaned CSV files (cleaned_posts.csv and cleaned_comments.csv) into Databricks as raw tables.
+   - Silver Layer (Silver.ipynb):
+      - Converts created_utc field from UNIX timestamp to human-readable datetime format.
+        
+   - Gold Layer (Gold.ipynb):
         Performs aggregations and prepares analytical datasets for visualization:
-            - Top 3 Posts by Engagement (sorted by score)
-            - Correlation analysis between top post scores and the average scores of their comments (to explore whether highly-rated posts also tend to have highly-rated comments).
-            - Top 5 commenters
-            
-       - Exploratory Data Analysis (EDA) & Visualizations
-         EDA is performed on the Gold layer datasets to extract insights.
-   **Generated visualizations include:**
+        - Top 3 Posts by Engagement (sorted by score)
+        - Correlation analysis between top post scores and the average scores of their comments (to explore whether highly-rated posts also tend to have highly-rated comments).
+        - Top 5 commenters
+     
+  - Exploratory Data Analysis (EDA) & Visualizations:
+          is performed on the Gold layer datasets to extract insights.
+    
+     **Generated visualizations include:**
              ![Top 3 posts ](top_3_posts.png)
              ![post score vs avg comments](post%20score%20vs%20avg%20comments.png)
              ![top commenters](top%20commenters.png)
