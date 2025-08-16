@@ -72,8 +72,10 @@ It extracts posts and their comments from technology subreddit via the Reddit AP
         - Removal of null values
         - Formatting of text fields
           
-**4- Databricks pipeline**
-   The pipeline follows a Bronze–Silver–Gold architecture:
+**4- Databricks pipeline**  
+
+Upload the cleaned data into a Databricks Volume (DBFS) to make it accessible for the pipeline.  
+From the volume, the data is ingested into the Bronze–Silver–Gold architecture:
    - Bronze Layer (Bronze.ipynb):
       - Reads the cleaned CSV files (cleaned_posts.csv and cleaned_comments.csv) into Databricks as raw tables.
    - Silver Layer (Silver.ipynb):
