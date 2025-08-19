@@ -19,14 +19,15 @@ It extracts posts and their comments from technology subreddit via the Reddit AP
 - Git
 
 ## Pipeline Architecture
+![Reddit Data Pipeline](Reddit%20Data%20Pipeline.png)
 
-**1- Data Extraction (Local)**
+**1- Data Extraction**
 
   - Connects to Reddit API via PRAW.
   - Retrieves posts and comments from the technology subreddit.
   - Saves raw data as parquet files into the 'raw' volume.
 
-**2- Data Profiling & Cleaning (Local)**
+**2- Data Profiling & Cleaning**
 
   - Loads the raw Parquet files.
   - Profiles the dataset.
